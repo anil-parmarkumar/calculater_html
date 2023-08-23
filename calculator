@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 150px;
+        }
+        
+        .container
+        {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            padding: 10px;
+            grid-gap: 10px;
+            background-color: rgb(152, 35, 35)52, 35, 35);
+        }
+        .button{
+            height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #search{
+            height: 50px;
+            width: 827px;
+            margin-left: 8px;
+        }
+        .button:hover{
+            background-color: lightblue;
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <input id="search" class="button" type="text" name="display">
+    <div class="container">
+    
+    <input class="button" type="button" value="00" onclick="search.value += '00'">
+    <input class="button" type="button" value="DE" onclick=" search.value = search.value.toString().slice(0,-1)">
+    <input class="button" type="button" value="%" onclick="search.value = '%'">
+    <input class="button" type="button" value="AC" onclick="search.value = ''">
+    <input class="button" type="button" value="7" onclick="search.value += '7'">
+    <input class="button" type="button" value="8" onclick="search.value += '8'">
+    <input class="button" type="button" value="9" onclick="search.value += '9'">
+    <input class="button" type="button" value="/" onclick="search.value += '/'">
+    <input class="button" type="button" value="4" onclick="search.value += '4'">
+    <input class="button" type="button" value="5" onclick="search.value += '5'">
+    <input class="button" type="button" value="6" onclick="search.value += '6'">
+    <input class="button" type="button" value="*" onclick="search.value += '*'">
+    <input class="button" type="button" value="1" onclick="search.value += '1'">
+    <input class="button" type="button" value="2" onclick="search.value += '2'">
+    <input class="button" type="button" value="3" onclick="search.value += '3'">
+    <input class="button" type="button" value="-" onclick="search.value += '-'">
+    <input class="button" type="button" value="0" onclick="search.value += '0'">
+    <input class="button" type="button" value="." onclick="search.value += '.'">
+    <input class="button" type="button" value="=" onclick="search.value = eval(search.value)">
+    <input class="button" type="button" value="+" onclick="search.value += '+'">
+
+</div>
+</body>
+</html>
